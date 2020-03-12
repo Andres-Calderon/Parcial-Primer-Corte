@@ -1,7 +1,7 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
-fetch('https://www.datos.gov.co/resource/yec2-e4mm.json')
+fetch('https://www.datos.gov.co/resource/dy2n-ub4e.json')
     .then(function(response) {
         return response.json();
     })
@@ -42,38 +42,30 @@ function generateTable(elementsJson) {
     var html = `
     <thead>
         <tr>
-            <th>Rango de edad</th>
-            <th>Enero</th>
-            <th>Febrero</th>
-            <th>Marzo</th>
-            <th>Abril</th>
-            <th>Mayo</th>
-            <th>Junio</th>
-            <th>Julio</th>
-            <th>Agosto</th>
-            <th>Septiembre</th>
-            <th>Octubre</th>
-            <th>Noviembre</th>
-            <th>Diciembre</th>
-            <th>Total</th>
+            <th>Departamento</th>
+            <th>Municipio</th>
+            <th>Tipo</th>
+            <th>Categoria</th>
+            <th>Fecha creacion</th>
+            <th>codigo dane</th>
+            <th>dominio</th>
+            <th>año</th>
+            <th>mes</th>
+            <th>visitas</th>
         </tr>
     </thead>
     <tfoot>
         <tr>
-        <th>Rango de edad</th>
-        <th>Enero</th>
-        <th>Febrero</th>
-        <th>Marzo</th>
-        <th>Abril</th>
-        <th>Mayo</th>
-        <th>Junio</th>
-        <th>Julio</th>
-        <th>Agosto</th>
-        <th>Septiembre</th>
-        <th>Octubre</th>
-        <th>Noviembre</th>
-        <th>Diciembre</th>
-        <th>Total</th>
+        <th>Departamento</th>
+        <th>Municipio</th>
+        <th>Tipo</th>
+        <th>Categoria</th>
+        <th>Fecha creacion</th>
+        <th>codigo dane</th>
+        <th>dominio</th>
+        <th>año</th>
+        <th>mes</th>
+        <th>visitas</th>
         </tr>
     </tfoot>
     <tbody>
@@ -81,20 +73,16 @@ function generateTable(elementsJson) {
     for (let json of elementsJson) {
         html += `
         <tr>
-            <td>${json.rango_de_edad}</td>
-            <td>${json.enero_2018}</td>
-            <td>${json.febrero_2018}</td>
-            <td>${json.marzo_2018}</td>
-            <td>${json.abril_2018}</td>
-            <td>${json.mayo_2018}</td>
-            <td>${json.junio_2018}</td>
-            <td>${json.julio_2018}</td>
-            <td>${json.agosto_2018}</td>
-            <td>${json.septiembre_2018}</td>
-            <td>${json.octubre_2018}</td>
-            <td>${json.noviembre_2018}</td>
-            <td>${json.diciembre_2018}</td>
-            <td>${json.totales}</td>
+            <td>${json.departamento}</td>
+            <td>${json.municipio}</td>
+            <td>${json.tipo}</td>
+            <td>${json.categoria}</td>
+            <td>${json.fecha_creacion}</td>
+            <td>${json.codigo_dane}</td>
+            <td>${json.dominio}</td>
+            <td>${json.ano}</td>
+            <td>${json.mes}</td>
+            <td>${json.visitas}</td>
         </tr>
         `;
     }

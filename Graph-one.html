@@ -56,7 +56,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Tablas</span>
@@ -81,8 +81,6 @@
                         <h6 class="collapse-header">Graficas de datos</h6>
                         <a class="collapse-item" href="Graph-one.html">Grafica 1</a>
                         <a class="collapse-item" href="Graph-two.html">Grafica 2</a>
-
-
                     </div>
                 </div>
             </li>
@@ -112,13 +110,29 @@
                 </nav>
 
                 <!-- Begin Page Content -->
+                <div>
+                    <h1>ZONAS DIGITALES RURALES EN CENTROS POBLADOS DE MUNICIPIOS DE NORTE DE SANTANDER</h1>
+                    <h5>Sitios geográficos con servicio de conectividad gratuita al servicio de la comunidad de los centros poblados de los municipios relacionados
+                        <a href="https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ZONAS-DIGITALES-RURALES-EN-CENTROS-POBLADOS-DE-MUN/c34d-te98">
+                            Conjunto de datos </a></h5>
+                </div>
                 <div class="container-fluid">
+                    <div class="col-xl-8 col-lg-7">
 
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Parcial Primer Corte </h1>
-                        <h1 class="h3 mb-0 text-gray-800">Andres Felipe Calderon </h1>
+                        <!-- Bar Chart -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Numero de personas beneficiadas</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-bar">
+                                    <canvas id="myBarChart"></canvas>
+                                </div>
+                                <hr> Numero de personas beneficiadas por municipio
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -144,12 +158,12 @@
     <!-- End of Page Wrapper -->
 
     <!-- rest script -->
-    <script src="js/Peticiones.js"></script>
+    <script src="modules/chart.js/dist/Chart.js"></script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- rest script -->
+    <script src="js/Graph-one-dataset.js"></script>
 
 </body>
-
-</html>
