@@ -1,14 +1,14 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
-fetch('https://www.datos.gov.co/resource/yec2-e4mm.json')
+fetch('https://www.datos.gov.co/resource/dy2n-ub4e.json')
     .then(function(response) {
         return response.json();
     })
     .then(function(myJson) {
 
         paintPaiChart(myJson);
-        generateTable(myJson);
+
     });
 
 //funtions        
@@ -45,10 +45,11 @@ function paintPaiChart(jsonElements) {
     var data = [];
     var colors = [];
     var total = jsonElements[jsonElements.length - 1].totales
-    for (var i = 0; i < jsonElements.length - 1; i++) {
-        labels[i] = jsonElements[i].rango_de_edad;
-        data[i] = (jsonElements[i].totales * 100) / total;
+    for (var i = 0; i < 20 - 1; i++) {
+        labels[i] = jsonElements[i].departamento;
+        data[i] = jsonElements[i].visitas;
         colors[i] = getRandomColor();
+
     }
     console.log(labels);
     console.log(data);

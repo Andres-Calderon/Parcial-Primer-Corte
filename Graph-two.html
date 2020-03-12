@@ -58,7 +58,7 @@
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                    <i class="fa fa-table" aria-hidden="true"></i>
                     <span>Tablas</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -73,7 +73,8 @@
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
+                    <i class="fa fa-pie-chart" aria-hidden="true"></i>
+
                     <span>Graficas</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
@@ -89,10 +90,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+
 
         </ul>
         <!-- End of Sidebar -->
@@ -111,24 +109,25 @@
 
                 <!-- Begin Page Content -->
                 <div>
-                    <h1>ZONAS DIGITALES RURALES EN CENTROS POBLADOS DE MUNICIPIOS DE NORTE DE SANTANDER</h1>
-                    <h5>Sitios geográficos con servicio de conectividad gratuita al servicio de la comunidad de los centros poblados de los municipios relacionados
-                        <a href="https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ZONAS-DIGITALES-RURALES-EN-CENTROS-POBLADOS-DE-MUN/c34d-te98">
+                    <h1>Visitas plataformas territoriales 2016
+                    </h1>
+                    <h5>Este conjunto de datos suministra el número de visitas mensual realizadas a cada uno de los sitios web de las alcaldías y gobernaciones que cuentan con plataformas territoriales otorgadas por el Ministerio TIC.
+                        <a href="https://www.datos.gov.co/Funci-n-p-blica/Visitas-plataformas-territoriales-2016/dy2n-ub4e">
                             Conjunto de datos </a></h5>
                 </div>
                 <div class="container-fluid">
                     <div class="col-xl-8 col-lg-7">
 
-                        <!-- Bar Chart -->
+                        <!-- pie Chart -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Numero de personas beneficiadas</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Numero de visitas</h6>
                             </div>
                             <div class="card-body">
                                 <div class="chart-bar">
-                                    <canvas id="myBarChart"></canvas>
+                                    <canvas id="myPieChart"></canvas>
                                 </div>
-                                <hr> Numero de personas beneficiadas por municipio
+                                <hr> Numero de visitas por departamento
                             </div>
                         </div>
                     </div>

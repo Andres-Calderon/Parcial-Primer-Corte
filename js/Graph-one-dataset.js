@@ -7,8 +7,8 @@ fetch('https://www.datos.gov.co/resource/c34d-te98.json')
     })
     .then(function(myJson) {
         paintBarChart(myJson);
-        paintPaiChart(myJson);
-        generateTable(myJson);
+
+
     });
 
 //funtions        
@@ -18,7 +18,7 @@ function paintBarChart(jsonElements) {
     var labels = [];
     var data = [];
     for (var i = 0; i < jsonElements.length - 1; i++) {
-        labels[i] = jsonElements[i].municipio;
+        labels[i] = jsonElements[i].centro_poblado;
         data[i] = jsonElements[i].poblaci_n_beneficiada_n_mero;
 
     }
